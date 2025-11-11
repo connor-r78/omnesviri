@@ -57,7 +57,6 @@ ovflavor_reg.1 = { # Albrecht Altdorfer
 			artist = painter
 			estate = estate_type:burghers_estate
 			script = reg_albrecht_altdorfer
-			create_in_limbo = yes
 		}
 		character:reg_albrecht_altdorfer ?= {
 			save_scope_as = target_character
@@ -67,8 +66,5 @@ ovflavor_reg.1 = { # Albrecht Altdorfer
 	option = {
 		name = ovflavor_reg.1.a
 		add_research_progress = research_progress_extreme_bonus
-		scope:target_character = {
-            move_country = c:REG
-        }
 	}
 }
