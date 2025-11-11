@@ -58,13 +58,11 @@ ovflavor_reg.1 = { # Albrecht Altdorfer
 			estate = estate_type:burghers_estate
 			script = reg_albrecht_altdorfer
 		}
-		character:reg_albrecht_altdorfer ?= {
-			save_scope_as = target_character
-		}
 	}
 
 	option = {
 		name = ovflavor_reg.1.a
+		historical_option = yes
 		add_research_progress = research_progress_extreme_bonus
 	}
 }

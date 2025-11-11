@@ -10099,6 +10099,8 @@
  name_ranuccio.spanish_language: "Ranucio"
  #
  name_ranulf: "Ranulf"
+ name_ranulf.latin_language: "Ranulphus"
+ name_ranulf.latin_language.genitive: "Ranulphī"
  name_ranulf.south_italian_language: "Rainulf"
  #
  name_raphael: "Raphael"

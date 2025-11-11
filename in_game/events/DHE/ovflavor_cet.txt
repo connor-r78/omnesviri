@@ -1,0 +1,62 @@
+﻿namespace = ovflavor_cet
+
+ovflavor_cet.1 = { # Ranulf Higden Completes the Polychronicon
+	type = country_event
+	title = ovflavor_cet.1.title
+	desc = ovflavor_cet.1.desc
+	historical_info = ovflavor_cet.1.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = CET
+		from = 1340.1.1 # historically 1340-42?
+		to = 1360.1.1
+		monthly_chance = 7
+	}
+
+	trigger = {
+		
+		character:cet_ranulf_higden ?= {
+			is_alive = yes
+		}
+
+	}
+
+	immediate = {
+		
+		if = {
+			limit = { owns = location:chester }
+			location:chester = {
+				save_scope_as = target_location
+			}
+		}
+		else = {
+			random_core_location = {
+				save_scope_as = target_location
+			}
+		}
+
+	}
+
+	image = "gfx/interface/illustrations/government/throne_rooms/throne_room_north_german.dds"
+
+	option = {
+		name = ovflavor_cet.1.a
+		historical_option = yes
+		
+		scope:target_location = {
+			create_art = {
+				artist = character:cet_ranulf_higden
+				quality = 90
+				location = scope:target_location
+				type = work_of_art_type:chronicle
+				key = polychronicon
+			}
+		}
+		character:cet_ranulf_higden = {
+			add_trait = trait:prominent
+		}
+
+	}
+	
+}

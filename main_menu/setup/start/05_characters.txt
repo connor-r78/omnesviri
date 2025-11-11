@@ -99670,20 +99670,21 @@ adm = 31 dip = 34 mil = 24
 		tag = KAM
 	}
 
-	# OV England
-	eng_ranulf_higden = {
+	# OV Chester
+	cet_ranulf_higden = {
 		first_name = { name = name_ranulf }
-		last_name = Higden
+		nickname = { name = higden }
+		last_name = Castrensis
 		culture = english
 		religion = catholic
 		estate = clergy_estate	
 		birth = winchester
 		birth_date = 1280.1.1 # ( c. 1280 )
-		tag = ENG
+		tag = CET
 
 		artist = writer
 		artist_skill = 0.70
-		artist_trait = prominent
+		artist_trait = adept
 	}
 
 }

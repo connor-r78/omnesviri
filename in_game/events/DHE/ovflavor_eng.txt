@@ -1,0 +1,38 @@
+﻿namespace = ovflavor_eng
+
+ovflavor_eng.1 = { # Ranulf Higden Invited to Court of Edward III
+	type = country_event
+	title = ovflavor_eng.1.title
+	desc = ovflavor_eng.1.desc
+	historical_info = ovflavor_eng.1.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ENG
+		from = 1350.1.1 # historically August 1352
+		to = 1370.1.1
+		monthly_chance = 7
+	}
+
+	trigger = {
+		character:cet_ranulf_higden ?= {
+			is_alive = yes
+			has_trait = prominent # gained from composition of Polychronicon
+		}
+	}
+
+	image = "gfx/interface/illustrations/government/throne_rooms/throne_room_north_german.dds"
+
+	option = {
+		name = ovflavor_eng.1.a
+		historical_option = yes
+		add_prestige = prestige_mild_bonus
+	}
+	option = {
+		name = ovflavor_eng.1.b
+		character:cet_ranulf_higden = {
+			move_country = root
+		}
+	}
+	
+}
