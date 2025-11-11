@@ -3,7 +3,7 @@
 	"id":	"omnes.mymod",
 	"version":	"0.1",
 	"supported_game_version":	"1.0.2",
-	"short_description":	"Tired of seeing John Generic everywhere? Wishing for a little bit mor flavor? Omnes Viri is for you!\n\nA mod that adds tons of historical characters.",
+	"short_description":	"Tired of seeing John Generic everywhere? Wishing for a little bit mor flavor? Omnes Viri is for you!\n\nA mod that adds tons of historical characters.\n\n\tDiscord: https://discord.gg/3T26Rgg9Md\n\tGithub:https://github.com/connor-r78/omnesviri\n\tAdded Characters: https://docs.google.com/spreadsheets/d/15qZJaCHZQe8mwwIonwKwkQo5hjbDZKBISsLTP5X3J7M/view\nTo contribute, join the Discord or make a PR on the Github.\nFor support, join the Discord.",
 	"tags":	["Characters", "Historical"],
 	"relationships":	[],
 	"game_custom_data":	{
