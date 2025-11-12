@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 		int found = FALSE;
 
 		countries = opendir("./");
-		if (!countries) return ERR_DIR_NOT_FOUND;
+		if ( !countries ) return ERR_DIR_NOT_FOUND;
 
 		while ( (dir = readdir(countries)) ) {
 			if ( strstr(dir->d_name, ".txt") && findTag(argv[TAG_ARG], dir->d_name) ) {
@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
 		}
 
 		closedir(countries);
-		if(!found) printf("%s is safe to use.\n", argv[TAG_ARG]);
+		if( !found ) printf("%s is safe to use.\n", argv[TAG_ARG]);
 		return SUCCESS;
   }
   else {
