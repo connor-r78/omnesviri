@@ -13,7 +13,7 @@
 #define TRUE 1
 	
 #define DEFAULT_BUFFER 100
-#define MUTATION_LENGTH 2
+#define MUTATION_LENGTH 3
 #define TAG_LENGTH 3
 
 int findTag(char *tag, char *countryfileName) 
