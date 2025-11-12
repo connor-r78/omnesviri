@@ -18,6 +18,8 @@
 
 int findTag(char *tag, char *countryfileName) 
 {
+	int found = FALSE;
+	
 	char mutatedTag[TAG_LENGTH + MUTATION_LENGTH];
     snprintf(mutatedTag, sizeof(mutatedTag), "%s =", tag);
 
@@ -25,13 +27,12 @@ int findTag(char *tag, char *countryfileName)
 	countryfile = fopen(countryfileName, "r");
 
 	char readString[DEFAULT_BUFFER];
-	while ( fgets(readString, DEFAULT_BUFFER, countryfile) ) {
-		if ( strstr(readString, mutatedTag) ) return TRUE;
-	}
+	while ( fgets(readString, DEFAULT_BUFFER, countryfile) )
+		if ( strstr(readString, mutatedTag) ) found = TRUE;
 
 	fclose(countryfile);
 
-	return FALSE;
+	return found;
 }
 
 int main(int argc, char *argv[])
